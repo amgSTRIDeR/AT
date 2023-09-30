@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const NumbersValidator = require('../app/numbersValidator');
 
-describe('isNumberEven positive tests', () => {
+describe('getEvenNumbersFromArray tests', () => {
   let validator;
   beforeEach(() => {
     validator = new NumbersValidator();
