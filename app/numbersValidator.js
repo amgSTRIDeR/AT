@@ -6,8 +6,7 @@ class NumbersValidator {
   isNumberEven(number) {
     const typeOfVariable = typeof number;
     if (typeOfVariable !== 'number') {
-      throw new Error(`[${number}] is not of type 
-      "Number" it is of type "${typeOfVariable}"`);
+      throw new Error(`[${number}] is not of type "Number" it is of type "${typeOfVariable}"`);
     } else {
       return number % 2 === 0;
     }

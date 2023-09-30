@@ -4,6 +4,6 @@
     "lines": 100,
     "functions": 100,
     "statements": 100,
-    "reporter": ["html", "text"] 
-    
+    "reporter": ["html", "text"],
+    "report-file": "coverage.html"
 }
