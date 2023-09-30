@@ -28,19 +28,19 @@ describe('isAllNumbers tests', () => {
 
   it('Should throw an error when provided a number', () => {
     expect(() => {
-      validator.getEvenNumbersFromArray(99);
+      validator.isAllNumbers(99);
     }).to.throw('[99] is not an array');
   });
 
   it('Should throw an error when provided a string', () => {
     expect(() => {
-      validator.getEvenNumbersFromArray('some string');
+      validator.isAllNumbers('some string');
     }).to.throw('[some string] is not an array');
   });
 
   it('Should throw an error when execute without arguments', () => {
     expect(() => {
-      validator.getEvenNumbersFromArray();
+      validator.isAllNumbers();
     }).to.throw('[undefined] is not an array');
   });
 });
