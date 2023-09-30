@@ -1,12 +1,27 @@
 {
   "name": "at",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "coverage": "c8 npm test",
+    "lint": "eslint ./"
   },
   "keywords": [],
   "author": "Aleksei Ovchinnikov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-require-jsdoc": "^1.0.4"
+  },
+  "dependencies": {
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "husky": "^8.0.3",
+    "mochawesome": "^7.1.3"
+  }
 }
