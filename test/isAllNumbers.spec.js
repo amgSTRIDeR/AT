@@ -21,7 +21,7 @@ describe('isAllNumbers tests', () => {
     expect(validationResults).to.be.equal(false);
   });
 
-  it('Should return true for an empty array', () => {
+  it('Should return false for an empty array', () => {
     const validationResults = validator.isAllNumbers([]);
     expect(validationResults).to.be.equal(false);
   });
