@@ -21,9 +21,9 @@ describe('isAllNumbers tests', () => {
     expect(validationResults).to.be.equal(false);
   });
 
-  it('Should return true for an empty array <Function does not check if the array is empty, so I think in a real situation I should use false as expected>', () => {
+  it('Should return true for an empty array', () => {
     const validationResults = validator.isAllNumbers([]);
-    expect(validationResults).to.be.equal(true);
+    expect(validationResults).to.be.equal(false);
   });
 
   it('Should throw an error when provided a number', () => {
