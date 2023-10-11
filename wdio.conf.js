@@ -22,7 +22,7 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        '../tests/**/*.tests.js',
+        './src/tests/**/*.tests.js',
     ],
     // Patterns to exclude.
     exclude: [

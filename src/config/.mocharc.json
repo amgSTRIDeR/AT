@@ -1,4 +1,0 @@
-{
-    "spec": "test/**/*spec.js",
-    "reporter": "mochawesome"
-}
