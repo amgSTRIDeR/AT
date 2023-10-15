@@ -22,7 +22,8 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        '../tests/**/*.tests.js',
+        // './src/tests/**/*.tests.js',
+        './src/tests/**/*.tests.js',
     ],
     // Patterns to exclude.
     exclude: [
@@ -280,4 +281,15 @@ export const config = {
     */
     // onReload: function(oldSessionId, newSessionId) {
     // }
+    before: function() {
+         browser.addCommand('customClick', async function(element) {
+          await element.waitForDisplayed();
+          await element.click();
+        });
+
+         browser.addCommand('customDoubleClick', async function(element) {
+          await element.waitForDisplayed();
+          await element.doubleClick();
+        });
+      },
 }
