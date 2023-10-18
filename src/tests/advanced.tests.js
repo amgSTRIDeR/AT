@@ -7,7 +7,8 @@ describe('Advanced tests', () => {
 
   it('Should add a new appointment in recent activities field', async () => {
     await browser.customClick($('//a[@routerlink="/calendar"]'));
-    await browser.customDoubleClick($('//td[@data-date="1596430800000"]'));
+    await browser.customDoubleClick($(`tbody tr[role="row"]
+     td[role="gridcell"]`));
     await $('div#_dialog_wrapper').waitForDisplayed();
     await browser.execute(() => {
       const patientName = document.getElementById('PatientName');
